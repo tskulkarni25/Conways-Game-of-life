@@ -19,3 +19,10 @@ vertically, or diagonally adjacent. At each step in time, the following transiti
   <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
   <li>Any dead cell with exactly three live neighbours becomes a live cell.</li>
 </ul>
+
+
+The initial pattern constitutes the seed of the system. The first generation is created
+by applying the above rules simultaneously to every cell in the seed; births and deaths
+happen simultaneously, and the discrete moment at which this happens is sometimes
+called a tick (in other words, each generation is a pure function of the one before).
+The rules continue to be applied repeatedly to create further generations.
