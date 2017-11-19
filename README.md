@@ -12,8 +12,10 @@ square cells, each of which is in one of two possible states, live or dead. Ever
 interacts with its eight neighbors, which are the cells that are directly horizontally,
 vertically, or diagonally adjacent. At each step in time, the following transitions occur:
 
-● Any live cell with fewer than two live neighbours dies, as if caused by
-underpopulation.
-● Any live cell with more than three live neighbours dies, as if by overcrowding.
-● Any live cell with two or three live neighbours lives on to the next generation.
-● Any dead cell with exactly three live neighbours becomes a live cell.
+<ul>
+  <li>Any live cell with fewer than two live neighbours dies, as if caused by
+  underpopulation.</li>
+  <li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+  <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+  <li>Any dead cell with exactly three live neighbours becomes a live cell.</li>
+</ul>
