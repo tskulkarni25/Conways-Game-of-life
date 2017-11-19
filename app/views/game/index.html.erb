@@ -1,0 +1,17 @@
+<h1 class="text-center">Game Of Life</h1>
+<div class="loop-count hidden">Loop count: <span>0</span></div>
+<div class="game-wrpr">
+  <%= render partial: "game_grid" %>
+</div>
+<div class="game-rules-desc">
+  <p>Rules of the game are as follows:</p>
+  <ul>
+    <li>Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</li>
+    <li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+    <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+    <li>Any dead cell with exactly three live neighbours becomes a live cell.</li>
+  </ul>
+  <%= button_tag "Start", class: "btn start-btn", disabled: true %>
+  <%= button_tag "Stop", class: "btn stop-btn", disabled: true %>
+  <%= button_tag "Clear", class: "btn clear-btn", disabled: true %>
+</div>

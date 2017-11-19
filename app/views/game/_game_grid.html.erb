@@ -1,0 +1,11 @@
+<div class="row" id="row">
+  <% (0..49).to_a.each do |i| %>
+    <% (0..49).to_a.each do |j| %>
+      <% if @grid and @grid[i][j] == 1 %>
+        <div class="col-xs-12 col-item active" row="<%= i %>" col="<%= j %>"></div>
+      <% else %>
+        <div class="col-xs-12 col-item" row="<%= i %>" col="<%= j %>"></div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
